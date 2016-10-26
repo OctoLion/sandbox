@@ -11,7 +11,7 @@ var Environment = {
   LOCAL_DEVELOPMENT: 2
 };
 
-var productionHost = 'www.kylesandbox.nationbuilder.com';
+var productionHost = 'kylesandbox.nationbuilder.com';
 var localDevHost = 'localhost:3902';
 var pullRequestHostRegex = /^kylesandbox-pr-\d+\.herokuapp\.com$/;
 
