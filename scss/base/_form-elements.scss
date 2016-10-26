@@ -1,0 +1,77 @@
+// Base Element: Form Elements
+//
+// Markup: base-form-elements.twig
+//
+// Style guide: base-form-elements
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  width: 100%;
+  margin-bottom: .5rem;
+  background: #f2f2f2;
+  border: 0;
+  border-bottom: 3px solid #1d3564;
+  color: #4f4f50;
+  border-radius: 5px;
+  appearance: none !important;
+  transition: background-color 300ms, border-bottom 300ms;
+
+  &:active,
+  &:focus,
+  &:hover {
+    //background-color: darken($form-background,10);
+    border-bottom: {
+      width: 3px;
+      style: solid;
+      color: #f3b300;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+select{
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+input {
+
+  &[type="submit"]  {
+    -webkit-appearance:none; /* Remove IOS styling */
+  }
+
+  &.error{
+    border-bottom: red 2px solid;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder{
+  color: #808080;
+}

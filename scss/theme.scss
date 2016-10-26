@@ -1,0 +1,22 @@
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+@import "base/*.scss";
+
+// Components
+//
+// Design components are reusable designs that can be applied using just the CSS
+// class names specified in the component.
+//
+// Weight: 1
+//
+// Styleguide: components
+
+@import "../components/**/*.scss";
+
+// Markup Examples
+//
+// Markup examples to exemplify current markup on the site that do not represent dream markup.
+//
+// Weight: 2
+//
+// Styleguide: markup-examples
