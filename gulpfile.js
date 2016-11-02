@@ -32,7 +32,7 @@ var uglifyOptions = {
 gulp.task('styleguide', gulpShell.task([
   // kss-node [source   folder of files to parse] [destination folder] --template [location of template files]
   'node_modules/.bin/kss <%= source %> <%= destination %> --builder <%= builder %> --namespace <%= namespace %> ' +
-  '--js /js/loader.js'
+  '--js /js/loader.js --css /css/theme.css'
 ], {
   templateData: {
     source: 'components',
